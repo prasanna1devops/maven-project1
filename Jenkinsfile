@@ -1,5 +1,8 @@
 pipeline {
     agent any // This specifies the agent where the pipeline will execute, 'any' means it can run on any available agent
+    tools {
+        maven 'Maven' // Replace 'Maven-Default' with the actual Maven tool name from Jenkins configuration
+    }
 
     stages {
         stage('Checkout') {
