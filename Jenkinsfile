@@ -8,7 +8,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from your Git repository
-                git 'https://github.com/prasanna1devops/maven-project1'
+               git credentialsId: 'git', url: 'https://github.com/prasanna1devops/maven-project1/'
             }
         }
 
