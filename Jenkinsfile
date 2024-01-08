@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from your Git repository
-                git 'https://github.com/your-username/your-maven-project.git'
+                git 'https://github.com/prasanna1devops/maven-project1'
             }
         }
 
